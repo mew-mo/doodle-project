@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/custom.css">
+  <title>a practise project</title>
+
+</head>
+
+<body onload="init()">
+
+  <div class="whiteboard">
+    <canvas id="can" width="400" height="400" style="position:absolute;top:10%;left:10%;border:#b0a7eb 2px solid;background-color:#fff;"></canvas>
+    <div style="position:absolute;top:12%;left:43%;">Choose Color</div>
+    <div style="position:absolute;top:15%;left:45%;width:10px;height:10px;background:#76c29b;" id="green" onclick="color(this)"></div>
+    <div style="position:absolute;top:15%;left:46%;width:10px;height:10px;background:#8886f2;" id="blue" onclick="color(this)"></div>
+    <div style="position:absolute;top:15%;left:47%;width:10px;height:10px;background:#f67480;" id="red" onclick="color(this)"></div>
+    <div style="position:absolute;top:17%;left:45%;width:10px;height:10px;background:#f2e694;" id="yellow" onclick="color(this)"></div>
+    <div style="position:absolute;top:17%;left:46%;width:10px;height:10px;background:#f9bb71;" id="orange" onclick="color(this)"></div>
+    <div style="position:absolute;top:17%;left:47%;width:10px;height:10px;background:#434345;" id="black" onclick="color(this)"></div>
+    <div style="position:absolute;top:20%;left:43%;">Eraser</div>
+    <div style="position:absolute;top:22%;left:45%;width:15px;height:15px;background:white;border: #b0a7eb 2px solid;" id="white" onclick="color(this)"></div>
+    <img id="canvasimg" style="position:absolute;top:10%;left:52%;display:none;background-color:#fff;">
+    <input type="button" value="save" id="btn" size="30" onclick="save()" style="position:absolute;top:75%;left:10%;">
+    <input type="button" value="clear" id="clr" size="23" onclick="erase()" style="position:absolute;top:75%;left:16%;">
+  </div>
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+  <!-- <script src="https://zwibbler.com/zwibbler-demo.js"></script>
+
+  <zwibbler z-canvas style="width:800px;height:500px"></zwibbler> -->
+
+</body>
+</html>
